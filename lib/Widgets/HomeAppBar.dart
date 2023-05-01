@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:badges/badges.dart' as badges;
 
+import '../Screens/Cart.dart';
+
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({Key? key}) : super(key: key);
 
@@ -37,7 +39,9 @@ class HomeAppBar extends StatelessWidget {
               style: TextStyle(color: Colors.white),
             ),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>Cart()) );
+              },
               child: Icon(
                 Icons.shopping_bag_outlined,
                 color: Color(0xFF4C53A5),
