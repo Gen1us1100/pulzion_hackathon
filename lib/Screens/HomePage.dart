@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:marketplace_app/Widgets/HomeAppBar.dart';
 
+import '../Widgets/CategoriesWidget.dart';
+import '../Widgets/ItemsWidget.dart';
+
 class homePageMain extends StatefulWidget {
   static String id = 'HomePageMain';
 
@@ -16,7 +19,7 @@ class _homePageMainState extends State<homePageMain> {
         children: [
           HomeAppBar(),
           Container(
-            height: 500.0,
+            //height: 500.0,
             padding: EdgeInsets.only(top: 15.0),
             decoration: BoxDecoration(
               color: Color(0xFFEDECF2),
@@ -69,6 +72,23 @@ class _homePageMainState extends State<homePageMain> {
                     ),
                   ),
                 ),
+                //Categories
+                CategoriesWidget(),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
+                  child: Text(
+                    'Best Selling',
+                    style: TextStyle(
+                      fontSize: 25.0,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF4C53A5),
+                    ),
+                  ),
+                ),
+
+                ItemsWidget(),
               ],
             ),
           ),
