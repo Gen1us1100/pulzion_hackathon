@@ -11,7 +11,9 @@ class CartAppBar extends StatelessWidget {
       child: Row(
         children: [
           InkWell(
-            onTap: (){},
+            onTap: (){
+              Navigator.pop(context);
+            },
             child: Icon(
               Icons.arrow_back,
               size: 30,
