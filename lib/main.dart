@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      /*debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
       ),
@@ -20,8 +20,10 @@ class MyApp extends StatelessWidget {
       routes: {
         homePageMain.id: (context) => homePageMain(),
         ProductMain.id: (context) => ProductMain(),
-        CartMain.id: (context) => CartMain(),
-      },
+        Cart.id: (context) => Cart(),
+
+      },*/
+      home : Cart(),
     );
   }
 }
