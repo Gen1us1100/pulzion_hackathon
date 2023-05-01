@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:marketplace_app/Screens/Cart.dart';
 import 'package:marketplace_app/Screens/HomePage.dart';
 import 'package:marketplace_app/Screens/Product.dart';
+import 'dart:ui' as ui show Canvas, Paint, Path;
 
 void main() => runApp(MyApp());
 
