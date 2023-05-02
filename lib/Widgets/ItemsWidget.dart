@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:marketplace_app/Screens/ItemPage.dart';
 
 class ItemsWidget extends StatelessWidget {
   const ItemsWidget({Key? key}) : super(key: key);
@@ -42,7 +43,9 @@ class ItemsWidget extends StatelessWidget {
                 ],
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, "ItemPage");
+                },
                 child: Container(
                   margin: EdgeInsets.all(10.0),
                   child: Image.asset(

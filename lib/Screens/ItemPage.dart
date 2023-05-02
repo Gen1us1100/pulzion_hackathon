@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../Widgets/ItemAppBar.dart';
+import 'package:marketplace_app/Widgets/ItemAppBar.dart';
 
 class ItemPage extends StatelessWidget {
   @override
@@ -8,11 +8,10 @@ class ItemPage extends StatelessWidget {
         backgroundColor: Color(0xFF4C53A5),
         body: ListView(
           children: [
-            ItemAppBar(
-              Padding(
-                padding: EdgeInsets.all(16),
-                child: Image.asset("images/1.png"),
-              ),
+            //ItemAppBar(),
+            Padding(
+              padding: EdgeInsets.all(20),
+              child: Image.asset("images/1.png", height: 300),
             ),
           ],
         ));

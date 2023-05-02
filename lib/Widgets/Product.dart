@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 class categorieswidget extends StatelessWidget {
-  static String id = 'categorieswidget';
-
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(

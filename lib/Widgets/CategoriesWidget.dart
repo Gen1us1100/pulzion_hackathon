@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CategoriesWidget extends StatelessWidget {
   const CategoriesWidget({Key? key}) : super(key: key);
-
+  static String id = 'CategoriesWidget';
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
