@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:marketplace_app/Screens/Cart.dart';
 import 'package:marketplace_app/Screens/HomePage.dart';
+import 'package:marketplace_app/Screens/ItemPage.dart';
 
 import 'dart:ui' as ui show Canvas, Paint, Path;
 
@@ -18,9 +19,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(scaffoldBackgroundColor: Colors.white),
       initialRoute: homePageMain.id,
       routes: {
-        "/": (context) => homePageMain(),
         homePageMain.id: (context) => homePageMain(),
         CategoriesWidget.id: (context) => CategoriesWidget(),
+        ItemPage.id: (context) => ItemPage(),
         //CartMain.id: (context) => CartMain(),
       },
     );

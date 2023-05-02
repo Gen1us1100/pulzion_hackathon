@@ -44,7 +44,7 @@ class ItemsWidget extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, "ItemPage");
+                  Navigator.pushNamed(context, ItemPage.id);
                 },
                 child: Container(
                   margin: EdgeInsets.all(10.0),

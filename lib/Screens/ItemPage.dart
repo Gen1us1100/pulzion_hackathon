@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:marketplace_app/Widgets/ItemAppBar.dart';
 
 class ItemPage extends StatelessWidget {
+  static String id = 'ItemPageMain';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
