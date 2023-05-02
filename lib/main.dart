@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         homePageMain.id: (context) => homePageMain(),
         ProductMain.id: (context) => ProductMain(),
-        //CartMain.id: (context) => CartMain(),
+        Cart.id: (context) => Cart(),
       },
     );
   }
