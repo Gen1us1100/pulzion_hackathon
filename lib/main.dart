@@ -18,13 +18,11 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => homePageMain(),
         homePageMain.id: (context) => homePageMain(),
-<<<<<<< HEAD
-        ProductMain.id: (context) => ProductMain(),
+        //ProductMain.id: (context) => ProductMain(),
         Cart.id: (context) => Cart(),
-=======
         categorieswidget.id: (context) => categorieswidget(),
 
->>>>>>> c01094cce55682f88a1282406be0a00e1f902971
+
       },
     );
   }
