@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ItemAppBar extends StatelessWidget {
-  ItemAppBar(Padding padding);
+  ItemAppBar();
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +27,12 @@ class ItemAppBar extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
           ),
+          Spacer(),
+          Icon(
+            Icons.favorite,
+            size: 30,
+            color: Colors.red,
+          )
         ],
       ),
     );
